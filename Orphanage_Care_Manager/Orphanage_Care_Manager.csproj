@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCF50FE4-AC50-41FA-8C6D-9DC92376727A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Orphanage_Care_Manager</RootNamespace>
+    <AssemblyName>Orphanage_Care_Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DonarsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonarsView.Designer.cs">
+      <DependentUpon>DonarsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonationsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonationsView.Designer.cs">
+      <DependentUpon>DonationsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailsView.Designer.cs">
+      <DependentUpon>EmailsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventsView.Designer.cs">
+      <DependentUpon>EventsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeView.Designer.cs">
+      <DependentUpon>HomeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrphanagesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrphanagesView.Designer.cs">
+      <DependentUpon>OrphanagesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrphansView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrphansView.Designer.cs">
+      <DependentUpon>OrphansView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequirementsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequirementsView.Designer.cs">
+      <DependentUpon>RequirementsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteersView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolunteersView.Designer.cs">
+      <DependentUpon>VolunteersView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DonarsView.resx">
+      <DependentUpon>DonarsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonationsView.resx">
+      <DependentUpon>DonationsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailsView.resx">
+      <DependentUpon>EmailsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsView.resx">
+      <DependentUpon>EventsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeView.resx">
+      <DependentUpon>HomeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrphanagesView.resx">
+      <DependentUpon>OrphanagesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrphansView.resx">
+      <DependentUpon>OrphansView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RequirementsView.resx">
+      <DependentUpon>RequirementsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolunteersView.resx">
+      <DependentUpon>VolunteersView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
