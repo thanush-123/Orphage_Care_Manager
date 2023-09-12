@@ -36,9 +36,9 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(737, 0);
+            this.label1.Location = new System.Drawing.Point(744, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 39);
+            this.label1.Size = new System.Drawing.Size(173, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Volunteers";
             // 
@@ -51,6 +51,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VolunteersView";
             this.Text = "VolunteersView";
+            this.Load += new System.EventHandler(this.VolunteersView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

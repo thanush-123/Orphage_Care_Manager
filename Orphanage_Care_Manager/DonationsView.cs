@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Orphanage_Care_Manager.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,16 @@ namespace Orphanage_Care_Manager
 {
     public partial class DonationsView : Form
     {
-        public DonationsView()
+        Admin admin = null;
+        public DonationsView(Admin admin)
         {
             InitializeComponent();
+            this.admin = admin; 
+        }
+
+        private void DonationsView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
