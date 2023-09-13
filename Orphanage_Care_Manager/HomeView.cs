@@ -19,7 +19,7 @@ namespace Orphanage_Care_Manager
         public HomeView(Admin admin)
         {
             InitializeComponent();
-            this.admin = admin;
+            
            
         }
 
