@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="db\DBConnection.cs" />
+    <Compile Include="db\DBQuery.cs" />
     <Compile Include="DonarsView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +84,16 @@
     <Compile Include="HomeView.Designer.cs">
       <DependentUpon>HomeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="model\Admin.cs" />
+    <Compile Include="model\Donation.cs" />
+    <Compile Include="model\Donar.cs" />
+    <Compile Include="model\Good.cs" />
+    <Compile Include="model\Item.cs" />
+    <Compile Include="model\Money.cs" />
+    <Compile Include="model\Orphan.cs" />
+    <Compile Include="model\Orphanage.cs" />
+    <Compile Include="model\Requirement.cs" />
+    <Compile Include="model\Volunteer.cs" />
     <Compile Include="OrphanagesView.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Orphanage_Care_Manager.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,12 @@ namespace Orphanage_Care_Manager
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        private Admin admin=null;
+        public Form1(Admin admin)
         {
             InitializeComponent();
-            load_form(new HomeView());
+            this.admin = admin;
+            load_form(new HomeView(admin));
         }
         public void load_form(Object form)
         {
@@ -32,47 +35,52 @@ namespace Orphanage_Care_Manager
 
         private void btnHomeOnClick(object sender, EventArgs e)
         {
-            load_form(new HomeView());
+            load_form(new HomeView(admin));
         }
 
         private void btnOrphanagesOnClick(object sender, EventArgs e)
         {
-            load_form(new OrphanagesView());
+            load_form(new OrphanagesView(admin));
         }
 
         private void btnOrphansOnClick(object sender, EventArgs e)
         {
-            load_form(new OrphansView());
+            load_form(new OrphansView(admin ));
         }
 
         private void bntVolunteersOnClick(object sender, EventArgs e)
         {
-            load_form(new VolunteersView());
+            load_form(new VolunteersView(admin));
         }
 
         private void btnDonatorsOnClick(object sender, EventArgs e)
         {
-            load_form(new DonationsView());
+            load_form(new DonarsView(admin));
         }
 
         private void btnDonationsOnClick(object sender, EventArgs e)
         {
-            load_form(new DonationsView());
+            load_form(new DonationsView(admin));
         }
 
         private void bntRequirementsOnClick(object sender, EventArgs e)
         {
-            load_form(new RequirementsView());
+            load_form(new RequirementsView(admin));
         }
 
         private void btnEmailsOnClick(object sender, EventArgs e)
         {
-            load_form(new EmailsView());
+            load_form(new EmailsView(admin));
         }
 
         private void btnEventsOnClick(object sender, EventArgs e)
         {
-            load_form(new EventsView());
+            load_form(new EventsView(admin));
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

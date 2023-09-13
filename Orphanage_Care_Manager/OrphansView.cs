@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Orphanage_Care_Manager.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace Orphanage_Care_Manager
 {
     public partial class OrphansView : Form
     {
-        public OrphansView()
+        Admin admin = null;
+        public OrphansView(Admin admin)
         {
             InitializeComponent();
+            this.admin = admin; 
+            
+        }
+
+        private void OrphansView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

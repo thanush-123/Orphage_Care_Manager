@@ -36,9 +36,9 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(790, 0);
+            this.label1.Location = new System.Drawing.Point(794, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 39);
+            this.label1.Size = new System.Drawing.Size(123, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Donars";
             // 
@@ -51,6 +51,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DonarsView";
             this.Text = "DonarsView";
+            this.Load += new System.EventHandler(this.DonarsView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,5 +60,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+      
     }
 }

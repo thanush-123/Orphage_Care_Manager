@@ -36,9 +36,9 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(746, 0);
+            this.label1.Location = new System.Drawing.Point(753, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 39);
+            this.label1.Size = new System.Drawing.Size(164, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Donations";
             // 
@@ -49,8 +49,10 @@
             this.ClientSize = new System.Drawing.Size(917, 673);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DonationsView";
             this.Text = "DonationsView";
+            this.Load += new System.EventHandler(this.DonationsView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
