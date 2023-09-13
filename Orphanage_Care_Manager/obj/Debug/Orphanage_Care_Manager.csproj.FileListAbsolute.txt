@@ -4,6 +4,7 @@ D:\2.SEM2\RAD\C# programming\Orphanage_Care_Manager\Orphanage_Care_Manager\bin\D
 D:\2.SEM2\RAD\C# programming\Orphanage_Care_Manager\Orphanage_Care_Manager\obj\Debug\Orphanage_Care_Manager.csproj.AssemblyReference.cache
 D:\2.SEM2\RAD\C# programming\Orphanage_Care_Manager\Orphanage_Care_Manager\obj\Debug\Orphanage_Care_Manager.csproj.SuggestedBindingRedirects.cache
 D:\2.SEM2\RAD\C# programming\Orphanage_Care_Manager\Orphanage_Care_Manager\obj\Debug\Orphanage_Care_Manager.DonarsView.resources
+D:\2.SEM2\RAD\C# programming\Orphanage_Care_Manager\Orphanage_Care_Manager\obj\Debug\Orphanage_Care_Manager.DonarsViewForm.resources
 D:\2.SEM2\RAD\C# programming\Orphanage_Care_Manager\Orphanage_Care_Manager\obj\Debug\Orphanage_Care_Manager.DonationsView.resources
 D:\2.SEM2\RAD\C# programming\Orphanage_Care_Manager\Orphanage_Care_Manager\obj\Debug\Orphanage_Care_Manager.EmailsView.resources
 D:\2.SEM2\RAD\C# programming\Orphanage_Care_Manager\Orphanage_Care_Manager\obj\Debug\Orphanage_Care_Manager.EventsView.resources

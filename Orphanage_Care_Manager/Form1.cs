@@ -1,12 +1,5 @@
 ﻿using Orphanage_Care_Manager.model;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Orphanage_Care_Manager
@@ -45,7 +38,7 @@ namespace Orphanage_Care_Manager
 
         private void btnOrphansOnClick(object sender, EventArgs e)
         {
-            load_form(new OrphansView(admin ));
+            load_form(new OrphansView(admin));
         }
 
         private void bntVolunteersOnClick(object sender, EventArgs e)
