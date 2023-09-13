@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="db\DBConnection.cs" />
+    <Compile Include="db\DBQuery.cs" />
     <Compile Include="DonarsView.cs">
       <SubType>Form</SubType>
     </Compile>
