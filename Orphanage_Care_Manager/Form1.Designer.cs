@@ -168,7 +168,7 @@
             // 
             // panel19
             // 
-            this.panel19.BackColor = System.Drawing.Color.Teal;
+            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(23)))));
             this.panel19.Controls.Add(this.panel18);
             this.panel19.Controls.Add(this.btnEvents);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Left;
@@ -192,7 +192,7 @@
             this.btnEvents.FlatAppearance.BorderSize = 0;
             this.btnEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEvents.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEvents.ForeColor = System.Drawing.Color.White;
+            this.btnEvents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(157)))), ((int)(((byte)(165)))));
             this.btnEvents.Location = new System.Drawing.Point(0, 0);
             this.btnEvents.Name = "btnEvents";
             this.btnEvents.Padding = new System.Windows.Forms.Padding(75, 0, 0, 0);
@@ -214,11 +214,12 @@
             // 
             // btnEmails
             // 
+            this.btnEmails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(23)))));
             this.btnEmails.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEmails.FlatAppearance.BorderSize = 0;
             this.btnEmails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmails.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmails.ForeColor = System.Drawing.Color.White;
+            this.btnEmails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(157)))), ((int)(((byte)(165)))));
             this.btnEmails.Location = new System.Drawing.Point(0, 0);
             this.btnEmails.Name = "btnEmails";
             this.btnEmails.Padding = new System.Windows.Forms.Padding(75, 0, 0, 0);
@@ -226,7 +227,7 @@
             this.btnEmails.TabIndex = 1;
             this.btnEmails.Text = "Emails";
             this.btnEmails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmails.UseVisualStyleBackColor = true;
+            this.btnEmails.UseVisualStyleBackColor = false;
             this.btnEmails.Click += new System.EventHandler(this.btnEmailsOnClick);
             // 
             // panel14
@@ -240,11 +241,12 @@
             // 
             // btnRequirements
             // 
+            this.btnRequirements.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(23)))));
             this.btnRequirements.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRequirements.FlatAppearance.BorderSize = 0;
             this.btnRequirements.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRequirements.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRequirements.ForeColor = System.Drawing.Color.White;
+            this.btnRequirements.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(157)))), ((int)(((byte)(165)))));
             this.btnRequirements.Location = new System.Drawing.Point(0, 0);
             this.btnRequirements.Name = "btnRequirements";
             this.btnRequirements.Padding = new System.Windows.Forms.Padding(75, 0, 0, 0);
@@ -252,7 +254,7 @@
             this.btnRequirements.TabIndex = 1;
             this.btnRequirements.Text = "Requirements";
             this.btnRequirements.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRequirements.UseVisualStyleBackColor = true;
+            this.btnRequirements.UseVisualStyleBackColor = false;
             this.btnRequirements.Click += new System.EventHandler(this.bntRequirementsOnClick);
             // 
             // panel12
@@ -266,11 +268,12 @@
             // 
             // btnDonations
             // 
+            this.btnDonations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(23)))));
             this.btnDonations.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDonations.FlatAppearance.BorderSize = 0;
             this.btnDonations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDonations.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDonations.ForeColor = System.Drawing.Color.White;
+            this.btnDonations.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(157)))), ((int)(((byte)(165)))));
             this.btnDonations.Location = new System.Drawing.Point(0, 0);
             this.btnDonations.Name = "btnDonations";
             this.btnDonations.Padding = new System.Windows.Forms.Padding(75, 0, 0, 0);
@@ -278,7 +281,7 @@
             this.btnDonations.TabIndex = 1;
             this.btnDonations.Text = "Donations";
             this.btnDonations.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonations.UseVisualStyleBackColor = true;
+            this.btnDonations.UseVisualStyleBackColor = false;
             this.btnDonations.Click += new System.EventHandler(this.btnDonationsOnClick);
             // 
             // panel10
@@ -292,11 +295,12 @@
             // 
             // btnDonators
             // 
+            this.btnDonators.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(23)))));
             this.btnDonators.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDonators.FlatAppearance.BorderSize = 0;
             this.btnDonators.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDonators.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDonators.ForeColor = System.Drawing.Color.White;
+            this.btnDonators.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(157)))), ((int)(((byte)(165)))));
             this.btnDonators.Location = new System.Drawing.Point(0, 0);
             this.btnDonators.Name = "btnDonators";
             this.btnDonators.Padding = new System.Windows.Forms.Padding(75, 0, 0, 0);
@@ -304,7 +308,7 @@
             this.btnDonators.TabIndex = 1;
             this.btnDonators.Text = "Donators";
             this.btnDonators.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonators.UseVisualStyleBackColor = true;
+            this.btnDonators.UseVisualStyleBackColor = false;
             this.btnDonators.Click += new System.EventHandler(this.btnDonatorsOnClick);
             // 
             // panel8
@@ -318,11 +322,12 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(23)))));
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(157)))), ((int)(((byte)(165)))));
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(75, 0, 0, 0);
@@ -330,7 +335,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Volunteers";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.bntVolunteersOnClick);
             // 
             // panel6
@@ -344,11 +349,12 @@
             // 
             // btnOrphans
             // 
+            this.btnOrphans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(23)))));
             this.btnOrphans.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnOrphans.FlatAppearance.BorderSize = 0;
             this.btnOrphans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrphans.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrphans.ForeColor = System.Drawing.Color.White;
+            this.btnOrphans.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(157)))), ((int)(((byte)(165)))));
             this.btnOrphans.Location = new System.Drawing.Point(0, 0);
             this.btnOrphans.Name = "btnOrphans";
             this.btnOrphans.Padding = new System.Windows.Forms.Padding(75, 0, 0, 0);
@@ -356,7 +362,7 @@
             this.btnOrphans.TabIndex = 1;
             this.btnOrphans.Text = "Orphans";
             this.btnOrphans.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrphans.UseVisualStyleBackColor = true;
+            this.btnOrphans.UseVisualStyleBackColor = false;
             this.btnOrphans.Click += new System.EventHandler(this.btnOrphansOnClick);
             // 
             // panel4
@@ -370,11 +376,12 @@
             // 
             // btnOrphanages
             // 
+            this.btnOrphanages.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(23)))));
             this.btnOrphanages.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnOrphanages.FlatAppearance.BorderSize = 0;
             this.btnOrphanages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrphanages.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrphanages.ForeColor = System.Drawing.Color.White;
+            this.btnOrphanages.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(157)))), ((int)(((byte)(165)))));
             this.btnOrphanages.Location = new System.Drawing.Point(0, 0);
             this.btnOrphanages.Name = "btnOrphanages";
             this.btnOrphanages.Padding = new System.Windows.Forms.Padding(75, 0, 0, 0);
@@ -382,7 +389,7 @@
             this.btnOrphanages.TabIndex = 1;
             this.btnOrphanages.Text = "Orphanages";
             this.btnOrphanages.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrphanages.UseVisualStyleBackColor = true;
+            this.btnOrphanages.UseVisualStyleBackColor = false;
             this.btnOrphanages.Click += new System.EventHandler(this.btnOrphanagesOnClick);
             // 
             // panel3
@@ -396,11 +403,12 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(23)))));
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(157)))), ((int)(((byte)(165)))));
             this.button2.Location = new System.Drawing.Point(0, 124);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(75, 0, 0, 0);
@@ -408,11 +416,12 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Home";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.btnHomeOnClick);
             // 
             // panelLeft
             // 
+            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(23)))));
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
@@ -421,6 +430,7 @@
             // 
             // panelTop
             // 
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(265, 0);
             this.panelTop.Name = "panelTop";

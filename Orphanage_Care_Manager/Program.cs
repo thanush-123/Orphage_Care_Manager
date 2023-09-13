@@ -21,7 +21,7 @@ namespace Orphanage_Care_Manager
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1(admin));
 
-            DBConnection.getConnection();
+            
 
             
         }
