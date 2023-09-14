@@ -54,6 +54,12 @@
     <Compile Include="DonarsView.Designer.cs">
       <DependentUpon>DonarsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="DonarsViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonarsViewForm.Designer.cs">
+      <DependentUpon>DonarsViewForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DonationsView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     <Compile Include="model\Orphanage.cs" />
     <Compile Include="model\Requirement.cs" />
     <Compile Include="model\Volunteer.cs" />
+    <Compile Include="modifyui\ModifiedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="OrphanagesView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +131,9 @@
     </Compile>
     <EmbeddedResource Include="DonarsView.resx">
       <DependentUpon>DonarsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonarsViewForm.resx">
+      <DependentUpon>DonarsViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DonationsView.resx">
       <DependentUpon>DonationsView.cs</DependentUpon>
