@@ -24,5 +24,17 @@ namespace Orphanage_Care_Manager
         {
 
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            OrphanageDetails orphanageDetails = new OrphanageDetails();
+            orphanageDetails.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            OrphanageDetails orphanageDetails=new OrphanageDetails();
+            orphanageDetails.Show();
+        }
     }
 }

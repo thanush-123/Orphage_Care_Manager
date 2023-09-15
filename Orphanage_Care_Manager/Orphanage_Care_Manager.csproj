@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="db\DBConnection.cs" />
     <Compile Include="db\DBQuery.cs" />
+    <Compile Include="db\OrphanageQuery.cs" />
     <Compile Include="DonarsView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +104,12 @@
     <Compile Include="modifyui\ModifiedTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="OrphanageDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrphanageDetails.Designer.cs">
+      <DependentUpon>OrphanageDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrphanagesView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +157,9 @@
     <EmbeddedResource Include="HomeView.resx">
       <DependentUpon>HomeView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrphanageDetails.resx">
+      <DependentUpon>OrphanageDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrphanagesView.resx">
       <DependentUpon>OrphanagesView.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +197,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sukhitha charities page.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
