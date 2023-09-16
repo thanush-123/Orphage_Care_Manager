@@ -2,6 +2,7 @@
 .vs/
 *.pdb
 *.exe
+*.cache 
 
 # Visual Studio user-specific files
 *.suo
