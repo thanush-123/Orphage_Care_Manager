@@ -20,7 +20,9 @@ namespace Orphanage_Care_Manager.db
             _conn.Close();
         }
         public void login() { }
-        public void addOrphanage(Orphanage orphanage) { }
+        public void addOrphanage(Orphanage orphanage) {
+            
+        }
         public void deleteOrphage(Orphanage orphanage) { }
         public void updateOrphanageDetails(Orphanage orphanage) { }
         public void registerOrphan(Orphan orphan) { }

@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 public class ModifiedTextBox : TextBox
 {
-    private int cornerRadius = 10;
+    private int cornerRadius = 100;
     private int textBoxHeight = 30; // Default height
 
     public int CornerRadius

@@ -37,12 +37,21 @@ namespace Orphanage_Care_Manager
             dt.Columns.Add("DonorType");
             dt.Columns.Add("Admin");
 
-            dt.Rows.Add("20024586956");
-            dt.Rows.Add("Gavesh");
-            dt.Rows.Add("0767171332");
-            dt.Rows.Add("gthanushika1@gmail.com");
-            dt.Rows.Add("Gold");
-            dt.Rows.Add("a001");
+            DataRow dataRow = dt.NewRow();
+            dataRow[0] = "20024586956";
+            dataRow[1] = "Gavesh";
+            dataRow[2] = "0767171332";
+            dataRow[3] = "gthanushika1@gmail.com";
+            dataRow[4] = "Gold";
+            dataRow[5] = "a001";
+
+            dt.Rows.Add(dataRow);
+            //dt.Rows.Add("20024586956");
+            //dt.Rows.Add("Gavesh");
+            //dt.Rows.Add("0767171332");
+            //dt.Rows.Add("gthanushika1@gmail.com");
+            //dt.Rows.Add("Gold");
+            //dt.Rows.Add("a001");
 
             gridDonars.DataSource = dt;
 
@@ -58,7 +67,7 @@ namespace Orphanage_Care_Manager
         {
             if (this.Parent != null)
             {
-                load_form(new DonarsViewForm());
+                load_form(new DonarsViewForm(admin,"Add"));
             }
             else
             {
@@ -69,12 +78,12 @@ namespace Orphanage_Care_Manager
 
         private void btnUpdateOnAction(object sender, EventArgs e)
         {
-
+            load_form(new DonarsViewForm(admin, "Update"));
         }
 
         private void btnDeleteOnAction(object sender, EventArgs e)
         {
-
+            load_form(new DonarsViewForm(admin, "Delete"));
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -113,5 +122,9 @@ namespace Orphanage_Care_Manager
             }
         }
 
+        private void gridDonars_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
