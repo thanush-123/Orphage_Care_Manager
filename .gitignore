@@ -11,6 +11,7 @@
 
 # C# project files
 *.csproj
+*.csproj.FileListAbsolute.txt
 
 # Ignore bin and obj directories
 bin/
