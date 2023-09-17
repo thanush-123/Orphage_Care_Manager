@@ -13,18 +13,21 @@ namespace Orphanage_Care_Manager.model
         private string _address;
         private string _contact;
         private string _email;
-        private string _status;
+        private string _type;
         private Admin _admin;
         private List<Donation> donations;
 
-        public Donar(string nic, string name, string address, string contact, string email, string status, Admin admin)
+        public Donar(string nic) 
+        {
+            _nic = nic;        
+        }  
+        public Donar(string nic, string name, string contact, string email, string type , Admin admin)
         {
             _nic = nic;
             _name = name;
-            _address = address;
             _contact = contact;
             _email = email;
-            _status = status;
+            _type = type;
             _admin = admin;
         }
 
@@ -33,7 +36,7 @@ namespace Orphanage_Care_Manager.model
         public string Address { get => _address; set => _address = value; }
         public string Contact { get => _contact; set => _contact = value; }
         public string Email { get => _email; set => _email = value; }
-        public string Status { get => _status; set => _status = value; }
+        public string Type { get => _type; set => _type = value; }
         public Admin Admin { get => _admin; set => _admin = value; }
         public List<Donation> Donations { get => donations; set => donations = value; }
     }
