@@ -18,7 +18,7 @@ namespace Orphanage_Care_Manager.db
             {
                 try
                 {
-                    sqlConn = new SqlConnection(@"Data Source=LAPTOP-MC83SL4O;Initial Catalog=Orphanage_Care_Manager; Integrated Security=True");
+                    sqlConn = new SqlConnection(@"Data Source=SAYUMI-PC;Initial Catalog=5-6314573820384512714;Integrated Security=True");
                     sqlConn.Open();
                 }catch (SqlException ex) { 
                     Console.WriteLine("Please ensure that the sqlconnection string is correct OR check whether the database is exists");
