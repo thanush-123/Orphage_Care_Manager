@@ -1,0 +1,18 @@
+# Visual Studio cache and temporary files
+.vs/
+*.pdb
+*.exe
+*.cache 
+
+# Visual Studio user-specific files
+*.suo
+*.user
+*.userosscache
+
+# C# project files
+*.csproj
+*.csproj.FileListAbsolute.txt
+
+# Ignore bin and obj directories
+bin/
+obj/

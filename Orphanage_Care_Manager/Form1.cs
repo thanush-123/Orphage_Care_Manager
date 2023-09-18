@@ -64,6 +64,7 @@ namespace Orphanage_Care_Manager
         private void btnEmailsOnClick(object sender, EventArgs e)
         {
             load_form(new EmailsView(admin));
+            new EmailsView(admin);
         }
 
         private void btnEventsOnClick(object sender, EventArgs e)

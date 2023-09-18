@@ -1,6 +1,8 @@
-﻿using Orphanage_Care_Manager.model;
+﻿using Orphanage_Care_Manager.db;
+using Orphanage_Care_Manager.model;
 using System;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -12,7 +14,7 @@ namespace Orphanage_Care_Manager
         public DonarsView(Admin admin)
         {
             InitializeComponent();
-            loaddatagridview();
+            loadDataGridview();
             this.admin = admin;
 
         }
@@ -27,22 +29,34 @@ namespace Orphanage_Care_Manager
 
         }
 
-        private void loaddatagridview()
+        private void loadDataGridview()
         {
             DataTable dt = new DataTable();
-            dt.Columns.Add("NIC");
-            dt.Columns.Add("Name");
-            dt.Columns.Add("Contact");
-            dt.Columns.Add("Email");
-            dt.Columns.Add("DonorType");
-            dt.Columns.Add("Admin");
+            //dt.Columns.Add("NIC");
+            //dt.Columns.Add("Name");
+            //dt.Columns.Add("Contact");
+            //dt.Columns.Add("Email");
+            //dt.Columns.Add("DonorType");
+            //dt.Columns.Add("Admin");
 
-            dt.Rows.Add("20024586956");
-            dt.Rows.Add("Gavesh");
-            dt.Rows.Add("0767171332");
-            dt.Rows.Add("gthanushika1@gmail.com");
-            dt.Rows.Add("Gold");
-            dt.Rows.Add("a001");
+
+            DonarsQuery donarsQuery = new DonarsQuery();
+            donarsQuery.retriveDonars(dt);
+            //DataRow dataRow = dt.NewRow();
+            //dataRow[0] = "20024586956";
+            //dataRow[1] = "Gavesh";
+            //dataRow[2] = "0767171332";
+            //dataRow[3] = "gthanushika1@gmail.com";
+            //dataRow[4] = "Gold";
+            //dataRow[5] = "a001";
+
+            //dt.Rows.Add(dataRow);
+            //dt.Rows.Add("20024586956");
+            //dt.Rows.Add("Gavesh");
+            //dt.Rows.Add("0767171332");
+            //dt.Rows.Add("gthanushika1@gmail.com");
+            //dt.Rows.Add("Gold");
+            //dt.Rows.Add("a001");
 
             gridDonars.DataSource = dt;
 
@@ -58,7 +72,7 @@ namespace Orphanage_Care_Manager
         {
             if (this.Parent != null)
             {
-                load_form(new DonarsViewForm());
+                load_form(new DonarsViewForm(admin, "Add"));
             }
             else
             {
@@ -69,11 +83,44 @@ namespace Orphanage_Care_Manager
 
         private void btnUpdateOnAction(object sender, EventArgs e)
         {
-
+            load_form(new DonarsViewForm(admin, "Update"));
         }
 
         private void btnDeleteOnAction(object sender, EventArgs e)
         {
+            //load_form(new DonarsViewForm(admin, "Delete"));
+            // Check if a row is selected in the DataGridView
+            if (gridDonars.SelectedRows.Count > 0)
+            {
+                // Get the value of the primary key (assuming it's in the first column)
+                //int primaryKeyValue = Convert.ToInt32(gridDonars.SelectedRows[0].Cells[0].Value);
+                DataGridViewRow selectedRow = gridDonars.SelectedRows[0];
+
+                // Perform the deletion in the database (Assuming you have a SQL connection and a command set up)
+
+
+                try
+                {
+                    string value = (string)selectedRow.Cells["DonatorNIC"].Value;
+                    Donar donar = new Donar(value);
+                    DonarsQuery donarsQuery = new DonarsQuery();
+                    donarsQuery.deleteDonar(donar);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                
+
+                // Remove the row from the DataGridView
+                gridDonars.Rows.Remove(gridDonars.SelectedRows[0]);
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete.");
+            }
+
 
         }
 
@@ -113,5 +160,9 @@ namespace Orphanage_Care_Manager
             }
         }
 
+        private void gridDonars_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

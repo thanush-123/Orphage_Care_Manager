@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Orphanage_Care_Manager.db
 {
-     class DBConnection
+     static class DBConnection
     {
         
         private static SqlConnection sqlConn=null;
