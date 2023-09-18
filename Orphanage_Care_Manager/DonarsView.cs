@@ -1,6 +1,7 @@
 ﻿using Orphanage_Care_Manager.db;
 using Orphanage_Care_Manager.model;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -162,6 +163,39 @@ namespace Orphanage_Care_Manager
 
         private void gridDonars_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void btnSendMails_Click(object sender, EventArgs e)
+        {
+            List<string> emails=null;
+            if (gridDonars.SelectedRows.Count > 0)
+            {
+                for(int i=0;i<gridDonars.SelectedRows.Count;i++)
+                {
+                    DataGridViewCell cell = gridDonars.SelectedRows[i].Cells[3];
+                    //emails.Add(gridDonars.SelectedRows[i].Cells[3].Value.ToString()); 
+                    // Check if the cell and its value are not null
+                    if (cell != null && cell.Value != null)
+                    {
+                        // Convert the cell value to a string and add it to the 'emails' list
+                        string email = cell.Value.ToString();
+                        emails.Add(email);
+                    }
+                    else
+                    {
+                        // Handle the case where the cell or its value is null
+                        // You can choose to skip, log, or handle this situation as needed.
+                    }
+
+                }
+                load_form(new EmailsView(admin,emails));
+            }
+            else
+            {
+                MessageBox.Show("Please select donars to send emails.");
+            }
+            
 
         }
     }
