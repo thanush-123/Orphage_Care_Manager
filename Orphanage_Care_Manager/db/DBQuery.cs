@@ -26,5 +26,8 @@ namespace Orphanage_Care_Manager.db
         public void registerOrphan(Orphan orphan) { }
         public void registerDonar(Donar donar) { }
         public void registerVolunteer(Volunteer volunteer) { }
+        public void addRequirements() { }
+
+
     }
 }

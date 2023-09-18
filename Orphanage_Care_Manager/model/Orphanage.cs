@@ -29,6 +29,11 @@ namespace Orphanage_Care_Manager.model
             this.admin = admin;
         }
 
+        public Orphanage(string orphanageRegNo)
+        {
+            this.orphanageRegNo = orphanageRegNo;
+        }
+
         public string OrphanageRegNo { get => orphanageRegNo; set => orphanageRegNo = value; }
         public string OrphanageName { get => orphanageName; set => orphanageName = value; }
         public string OrphanageAddress { get => orphanageAddress; set => orphanageAddress = value; }

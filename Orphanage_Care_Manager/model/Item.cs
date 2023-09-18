@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Orphanage_Care_Manager.model
 {
-    class Item
+    public class Item
     {
         private string id;
         private string name;
@@ -18,6 +18,7 @@ namespace Orphanage_Care_Manager.model
             this.quantity = quantity;   
         }
 
+        
         public string Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
         public int Quantity { get => quantity; set => quantity = value; }
