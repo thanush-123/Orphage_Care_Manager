@@ -16,10 +16,22 @@ namespace Orphanage_Care_Manager
     public partial class EmailsView : Form
     {
         Admin admin = null;
+        List<string> emails;
         public EmailsView(Admin admin)
         {
             InitializeComponent();
-            this.admin = admin; 
+            this.admin = admin;
+        }
+        public EmailsView(Admin admin, List<string> emails)
+        {
+            InitializeComponent();
+            this.admin = admin;
+            this.emails = emails;
+            foreach (string email in emails)
+            {
+                Console.WriteLine(email);
+            }
+
         }
 
         private void EmailsView_Load(object sender, EventArgs e)
@@ -63,6 +75,11 @@ namespace Orphanage_Care_Manager
             {
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

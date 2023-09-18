@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.modifiedTextBox1 = new ModifiedTextBox();
+            this.modifiedTextBox2 = new ModifiedTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.modifiedTextBox1 = new ModifiedTextBox();
-            this.modifiedTextBox2 = new ModifiedTextBox();
             this.modifiedTextBox3 = new ModifiedTextBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -85,6 +85,41 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(917, 387);
             this.tableLayoutPanel1.TabIndex = 3;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // modifiedTextBox1
+            // 
+            this.modifiedTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.modifiedTextBox1.CornerRadius = 100;
+            this.modifiedTextBox1.Location = new System.Drawing.Point(297, 27);
+            this.modifiedTextBox1.Multiline = true;
+            this.modifiedTextBox1.Name = "modifiedTextBox1";
+            this.modifiedTextBox1.Size = new System.Drawing.Size(533, 30);
+            this.modifiedTextBox1.TabIndex = 0;
+            this.modifiedTextBox1.TextBoxHeight = 30;
+            // 
+            // modifiedTextBox2
+            // 
+            this.modifiedTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.modifiedTextBox2.CornerRadius = 100;
+            this.modifiedTextBox2.Location = new System.Drawing.Point(297, 108);
+            this.modifiedTextBox2.Multiline = true;
+            this.modifiedTextBox2.Name = "modifiedTextBox2";
+            this.modifiedTextBox2.Size = new System.Drawing.Size(533, 30);
+            this.modifiedTextBox2.TabIndex = 1;
+            this.modifiedTextBox2.TextBoxHeight = 30;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(722, 334);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 50);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "send";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -123,48 +158,14 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Message";
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(722, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 50);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "send";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // modifiedTextBox1
-            // 
-            this.modifiedTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.modifiedTextBox1.CornerRadius = 100;
-            this.modifiedTextBox1.Location = new System.Drawing.Point(297, 27);
-            this.modifiedTextBox1.Multiline = true;
-            this.modifiedTextBox1.Name = "modifiedTextBox1";
-            this.modifiedTextBox1.Size = new System.Drawing.Size(533, 30);
-            this.modifiedTextBox1.TabIndex = 0;
-            this.modifiedTextBox1.TextBoxHeight = 30;
-            // 
-            // modifiedTextBox2
-            // 
-            this.modifiedTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.modifiedTextBox2.CornerRadius = 100;
-            this.modifiedTextBox2.Location = new System.Drawing.Point(297, 108);
-            this.modifiedTextBox2.Multiline = true;
-            this.modifiedTextBox2.Name = "modifiedTextBox2";
-            this.modifiedTextBox2.Size = new System.Drawing.Size(533, 30);
-            this.modifiedTextBox2.TabIndex = 1;
-            this.modifiedTextBox2.TextBoxHeight = 30;
-            // 
             // modifiedTextBox3
             // 
             this.modifiedTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.modifiedTextBox3.CornerRadius = 100;
-            this.modifiedTextBox3.Location = new System.Drawing.Point(297, 222);
+            this.modifiedTextBox3.Location = new System.Drawing.Point(297, 232);
             this.modifiedTextBox3.Multiline = true;
             this.modifiedTextBox3.Name = "modifiedTextBox3";
-            this.modifiedTextBox3.Size = new System.Drawing.Size(533, 50);
+            this.modifiedTextBox3.Size = new System.Drawing.Size(533, 30);
             this.modifiedTextBox3.TabIndex = 2;
             this.modifiedTextBox3.TextBoxHeight = 30;
             // 
